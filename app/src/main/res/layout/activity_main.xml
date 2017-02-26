@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Question 1 -->
+        <LinearLayout
+            android:id="@+id/quest1"
+            style="@style/questionBox">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupOne"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOneOne"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans1.1" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOneTwo"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans1.2" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOneThree"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans1.3" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Question 2 -->
+        <LinearLayout
+            android:id="@+id/quest2"
+            style="@style/questionBox"
+            android:layout_below="@+id/quest1">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTwo"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioButtonTwoOne"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans2.1" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTwoTwo"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans2.2" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTwoThree"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans2.3" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Question 3 -->
+        <LinearLayout
+            android:id="@+id/quest3"
+            style="@style/questionBox"
+            android:layout_below="@id/quest2">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question3" />
+
+            <EditText
+                android:id="@+id/textFieldOne"
+                style="@style/textField" />
+        </LinearLayout>
+
+        <!-- Question 4 -->
+        <LinearLayout
+            android:id="@+id/quest4"
+            style="@style/questionBox"
+            android:layout_below="@id/quest3">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question4" />
+
+            <EditText
+                android:id="@+id/textFieldTwo"
+                style="@style/textField" />
+        </LinearLayout>
+
+        <!-- Question 5 -->
+        <LinearLayout
+            android:id="@+id/quest5"
+            style="@style/questionBox"
+            android:layout_below="@id/quest4">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question5" />
+
+            <LinearLayout style="@style/innerLinearLayout">
+
+                <CheckBox
+                    android:id="@+id/checkbox51"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans5.1" />
+
+                <CheckBox
+                    android:id="@+id/checkbox52"
+                    style="@style/radioButton_checkBoxes"
+                    android:layout_marginLeft="@dimen/margLeftCheckBox"
+                    android:text="@string/ans5.2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox53"
+                    style="@style/radioButton_checkBoxes"
+                    android:layout_marginLeft="@dimen/margLeftCheckBox"
+                    android:text="@string/ans5.3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question 6 -->
+        <LinearLayout
+            android:id="@+id/quest6"
+            style="@style/questionBox"
+            android:layout_below="@id/quest5">
+
+            <TextView
+                style="@style/questionText"
+                android:text="@string/question6" />
+
+            <LinearLayout style="@style/innerLinearLayout">
+
+                <CheckBox
+                    android:id="@+id/checkbox61"
+                    style="@style/radioButton_checkBoxes"
+                    android:text="@string/ans6.1" />
+
+                <CheckBox
+                    android:id="@+id/checkbox62"
+                    style="@style/radioButton_checkBoxes"
+                    android:layout_marginLeft="@dimen/margLeftCheckBox"
+                    android:text="@string/ans6.2" />
+
+                <CheckBox
+                    android:id="@+id/checkbox63"
+                    style="@style/radioButton_checkBoxes"
+                    android:layout_marginLeft="@dimen/margLeftCheckBox"
+                    android:text="@string/ans6.3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quest6"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padTopLinearBut">
+
+            <Button
+                android:id="@+id/answerButton"
+                style="@style/button"
+                android:drawableLeft="@drawable/fingerprint"
+                android:onClick="buttonAnswerHandler"
+                android:text="@string/buttonAns" />
+
+            <Button
+                style="@style/button"
+                android:layout_marginLeft="@dimen/margLeftBut"
+                android:drawableLeft="@drawable/refresh"
+                android:onClick="buttonResetHandler"
+                android:text="@string/buttonRes" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+    <!-- <div> Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> --><!--<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>--><!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Food Challenge</string>
+    <!-- Question 1 -->
+    <string name="question1">Pick something to spead on bread</string>
+    <string name="ans1.1">Peanut butter</string>
+    <string name="ans1.2">Cement</string>
+    <string name="ans1.3">Grease</string>
+
+    <!-- Question 2 -->
+    <string name="question2">Choose a pasta dish</string>
+    <string name="ans2.1">Omelet</string>
+    <string name="ans2.2">Cannelloni</string>
+    <string name="ans2.3">Peas</string>
+
+    <!-- Question 3 -->
+    <string name="question3">Monkey eat</string>
+
+    <!-- Question 4 -->
+    <string name="question4">tomato color</string>
+
+    <!-- Question 5 -->
+    <string name="question5">Pick a topping for ice cream</string>
+    <string name="ans5.1">Caramel syp</string>
+    <string name="ans5.2">Radio Button</string>
+    <string name="ans5.3">Cookies</string>
+
+    <!-- Question 6 -->
+    <string name="question6">Chocolate desert</string>
+    <string name="ans6.1">Chocolate cake</string>
+    <string name="ans6.2">Brownies</string>
+    <string name="ans6.3">Egg</string>
+
+    <!-- Button -->
+    <string name="buttonAns">Answer</string>
+    <string name="buttonRes">Reset</string>
+
+    <!-- Edit Text -->
+    <string name="hint">Enter here...</string>
+</resources>

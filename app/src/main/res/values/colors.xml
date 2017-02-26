@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Question Box -->
+    <color name="backgroundColor">#A5D6A7</color>
+
+    <!-- Question Text -->
+    <color name="textColorQuestText">#131516</color>
+
+    <!-- Radio Button & CheckBoxes-->
+    <color name="butTintColor">#707c80</color>
+    <color name="textColorRadioCheckBut">#707c80</color>
+
+    <!-- Edit Text -->
+    <color name="textColorEditText">#707c80</color>
+    <color name="backTintEditText">#707c80</color>
+
+    <!-- Answer & Reset Button Style -->
+    <color name="backColorBut">#9E9E9E</color>
+</resources>
